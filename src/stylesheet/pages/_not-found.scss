@@ -1,0 +1,43 @@
+.page-404 {
+  width: 100%;
+  background-color: #fdf7f2;
+  &-wrapper {
+    min-height: 100vh;
+  }
+  &-content {
+    width: 50%;
+  }
+
+  &-status {
+    background: linear-gradient(180deg, #1b3044 26.17%, map-get($color, primary) 108.3%);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    font-family: "Concert One", cursive;
+    font-size: 302px;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+
+  &-title {
+    margin-bottom: 16px;
+    color: #000;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 46px;
+    font-weight: map-get($font-weight, light);
+  }
+
+  &-subtitle {
+    margin-bottom: 16px;
+    color: #b0b0b0;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: map-get($font-size, xl);
+    font-weight: map-get($font-weight, medium);
+  }
+  &-banner {
+    width: 50%;
+  }
+  &-img {
+    width: 70%;
+  }
+}

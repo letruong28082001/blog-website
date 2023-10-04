@@ -1,0 +1,62 @@
+.aside {
+  .top-follower,
+  .top-post {
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+  }
+  .user-list,
+  .top-post-list {
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+  }
+  .aside-title {
+    margin-bottom: 10px;
+  }
+  .user-item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  .user-info-wrapper {
+    min-width: 180px;
+  }
+  .btn-follow {
+    margin-top: 4px;
+  }
+
+  .user-avatar {
+    width: 35px;
+    height: 35px;
+    margin-right: 12px;
+    border-radius: 50%;
+  }
+  .user-name {
+    font-size: map-get($font-size, sm);
+  }
+  .followers {
+    font-size: map-get($font-size, sm);
+  }
+  .btn-follow {
+    padding: 6px 12px;
+  }
+  .top-post {
+    &-item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &-author {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-size: map-get($font-size, sm);
+    }
+    &-title {
+      line-height: 1.2;
+      font-size: map-get($font-size, md);
+      &:hover {
+        color: map-get($color, primary);
+      }
+    }
+  }
+}

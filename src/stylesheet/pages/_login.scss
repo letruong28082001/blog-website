@@ -1,0 +1,66 @@
+.auth {
+  .auth-title {
+    margin: 40px 0 60px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      transform: translate(-50%);
+
+      width: 150px;
+      border: 1px solid map-get($map: $color, $key: primary);
+    }
+  }
+
+  .login-subtext {
+    width: 50px;
+    margin: 0 4px;
+    font-size: map-get($map: $font-size, $key: sm);
+    color: map-get($map: $color, $key: subtext);
+  }
+  .login-icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .login-external {
+    padding: 8px;
+    margin-bottom: 80px;
+    border-radius: 12px;
+    border: 1px solid #c8c8c8;
+    font-size: map-get($map: $font-size, $key: sm);
+  }
+
+  .input-password-group {
+    position: relative;
+
+    .icon-password {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 16px;
+      height: 16px;
+      transform: translateY(-50%);
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .error-login-fail {
+    font-size: map-get($map: $font-size, $key: md);
+  }
+}
+
+@media only screen and (max-width: map-get($breakpoints , md)) {
+  .auth-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+  }
+
+  .auth-bg {
+    display: none;
+  }
+}

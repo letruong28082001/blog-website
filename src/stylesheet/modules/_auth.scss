@@ -1,0 +1,51 @@
+.auth-wrapper {
+  height: 100vh;
+  width: 100%;
+  margin: 0 !important;
+  overflow: hidden;
+
+  .logo-img {
+    width: 200px;
+  }
+
+  .auth-body {
+    max-width: 680px;
+    padding: 32px 24px 24px;
+    margin: 0 auto;
+
+    .auth-title {
+      position: relative;
+      padding-top: 16px;
+
+      font-size: 30px;
+      font-weight: map-get($map: $font-weight, $key: medium);
+    }
+  }
+
+  .auth-bg {
+    padding: 0;
+    .auth-img {
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  .btn-auth {
+    width: 100%;
+    margin: 20px 0 10px;
+    outline: 0;
+    border: 1px solid transparent;
+  }
+  .auth-link {
+    color: map-get($map: $color, $key: primary);
+    font-weight: map-get($map: $font-weight, $key: semibold);
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media only screen and (max-width: map-get($breakpoints, md)) {
+  .auth-bg {
+    display: none;
+  }
+}

@@ -1,0 +1,58 @@
+.register-page {
+  .logo-wrapper {
+    height: 42px;
+  }
+  .auth-body {
+    height: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .auth-title {
+      padding-top: 0;
+      margin-top: -24px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 250px;
+        bottom: -8px;
+        left: 50%;
+
+        border: 1px solid map-get($map: $color, $key: primary);
+        transform: translate(-50%);
+      }
+    }
+
+    .form-register {
+      margin-top: 30px;
+    }
+
+    .input-password-group {
+      position: relative;
+
+      .icon-password {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        width: 16px;
+        height: 16px;
+        transform: translateY(-50%);
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+
+    .btn-auth {
+      margin-top: 10px;
+    }
+  }
+
+  @media only screen and (max-width: map-get($breakpoints, md)) {
+    .auth-wrapper {
+      height: 100%;
+    }
+  }
+}

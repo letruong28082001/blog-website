@@ -1,0 +1,27 @@
+.section-draft,
+.section-bookmark,
+.section-post-recycle {
+  .section-title {
+    margin-bottom: 24px;
+  }
+  .post:hover {
+    .post-edit {
+      display: inline-block;
+    }
+  }
+}
+
+.section-bookmark {
+  .icon-bookmark-wrapper {
+    cursor: pointer;
+  }
+}
+
+.section-post-recycle,
+.section-bookmark {
+  .post {
+    &:hover .post-edit {
+      display: none;
+    }
+  }
+}
